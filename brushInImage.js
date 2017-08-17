@@ -17,7 +17,6 @@ var downL
 var left
 var upL
 
-//武
 var DragSpeed;
 var rSlider;
 var gSlider;
@@ -53,7 +52,6 @@ function setup(){
   upL.position()*/
 
 
-  //武
     //创建滑块
 
     AddBrush = createCheckbox('AddBrush', false);
@@ -127,7 +125,6 @@ function setup(){
 
 
 
-//武
 var brush = []
 
 //绘制图像
@@ -152,7 +149,6 @@ function draw(){
      Q = Q + 0.01
 
 
-    //武
      //跟随运动
  var addOther
  if(mouseButton == 1){
@@ -197,14 +193,13 @@ function draw(){
 
 //鼠标控制
 
-//武
 var reM
 var newM
 var dis
 var addDis
 
 function mousePressed(){
-  //武
+  
     mouseButton = 1
 
   //获得鼠标点击的初始位置
@@ -227,12 +222,12 @@ function mousePressed(){
 }
 
 function mouseReleased(){
-  //武
+  
   mouseButton = 0
 }
 
 function mouseDragged(){
-  //武
+  
   mouseButton = 1
   newM = createVector(mouseX, mouseY)
   
@@ -244,7 +239,7 @@ function mouseDragged(){
   reM = reM.add(addDis)
 }
 
-//武
+
 function myCheckedEvent1() {
   if (this.checked()) {
     addButton = true;
@@ -261,7 +256,7 @@ function myCheckedEvent2() {
   }
 }
 
-//武
+
 //绘制圆
 function drawPen(x1, y1, r, g, b, a, Radius){
   //stroke(0, 0, 0, a/2)
